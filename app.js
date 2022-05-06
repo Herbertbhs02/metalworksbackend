@@ -22,4 +22,4 @@ app.use('/',admin)
 app.use('/',retrievework)
 
 const port = process.env.PORT || 7070
-app.listen(port, ()=>{console.log(`server is running at port:${port}`)});
+app.listen(port, ()=>{console.log(`server is running on port:${port}`)});
