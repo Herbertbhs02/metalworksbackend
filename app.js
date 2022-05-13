@@ -1,14 +1,16 @@
 const cors = require("cors");
 const express = require("express");
 const admin = require('./admin')
-const retrievework = require('./retrievework')
-const app = express();
-const ejs = require("ejs");
-const mongoose = require('mongoose')
-app.set('view engine', 'ejs');
-app.use(express.static("public"));
 app.use(express.json());
 app.use(cors());
+const app = express();
+const retrievework = require('./retrievework')
+
+// const ejs = require("ejs");
+const mongoose = require('mongoose')
+// app.set('view engine', 'ejs');
+app.use(express.static("public"));
+
 require('dotenv').config({path:__dirname + '/.env'})
 
 //mongoose.connect:Connecting to cloud mongoDB atlas 
