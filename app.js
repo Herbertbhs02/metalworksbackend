@@ -1,9 +1,10 @@
 const cors = require("cors");
 const express = require("express");
 const admin = require('./admin')
+const app = express();
 app.use(express.json());
 app.use(cors());
-const app = express();
+
 const retrievework = require('./retrievework')
 
 // const ejs = require("ejs");
