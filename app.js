@@ -7,9 +7,9 @@ app.use(cors());
 
 const retrievework = require('./retrievework')
 
-// const ejs = require("ejs");
+ const ejs = require("ejs");
 const mongoose = require('mongoose')
-// app.set('view engine', 'ejs');
+ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 require('dotenv').config({path:__dirname + '/.env'})
